@@ -1,0 +1,45 @@
+import java.util.Random;
+
+public class MaxMin {
+	public static void main(String args[]){
+	
+		int maxNum;
+		int minNum;
+		int intArray[] = new int[10];
+		maxNum = 0;
+		int maxValue;
+		
+		for (int count = 0; count < 10; count++ ){
+			
+			intArray[count] = (int)(Math.random()*99);
+			
+				System.out.println(intArray[count]);
+			}
+		
+		maxValue = Max(intArray);
+		
+		System.out.print("The Max Value is " + maxValue);
+		
+			
+		}
+		
+		
+	public static int Max(int array[]){
+		
+		int maxVal = 0;
+		
+		for (int i = 0; i < 10; i++){
+			if(array[i] > maxVal){
+				maxVal = array[i];
+			}
+			
+		
+	
+		
+	}
+	return maxVal;	
+
+	}
+	}
+	
+	
