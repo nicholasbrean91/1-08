@@ -1,5 +1,8 @@
-import java.util.Random;
+//Created By: Nicholas Brean
+//Created On: Sep 2018
+//Created To present the Max and Min of any generated 10 numbers
 
+import java.util.Random;
 public class MaxMin {
 	public static void main(String args[]){
 	
@@ -8,20 +11,20 @@ public class MaxMin {
 		int intArray[] = new int[10];
 		maxNum = 0;
 		int maxValue;
+		int minValue;
 		
 		for (int count = 0; count < 10; count++ ){
-			
 			intArray[count] = (int)(Math.random()*99);
-			
 				System.out.println(intArray[count]);
 			}
 		
 		maxValue = Max(intArray);
+		System.out.println("The Max Value is " + maxValue);
 		
-		System.out.print("The Max Value is " + maxValue);
-		
-			
-		}
+	
+		minValue = Min(intArray);
+		System.out.println("The Min Value is " + minValue);
+	}
 		
 		
 	public static int Max(int array[]){
@@ -32,14 +35,24 @@ public class MaxMin {
 			if(array[i] > maxVal){
 				maxVal = array[i];
 			}
-			
-		
 	
-		
 	}
 	return maxVal;	
 
 	}
+	
+	
+	public static int Min(int array[]){
+		
+		int minVal = 100;
+		
+		for (int i = 0; i < 10; i++){
+			if(array[i] < minVal){
+				minVal = array[i];
+			}
+	
 	}
-	
-	
+	return minVal;	
+
+	}
+}
