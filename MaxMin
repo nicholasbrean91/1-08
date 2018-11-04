@@ -31,9 +31,9 @@ public class MaxMin {
 		
 		int maxVal = 0;
 		
-		for (int i = 0; i < 10; i++){
-			if(array[i] > maxVal){
-				maxVal = array[i];
+		for (int maxCount = 0; maxCount < 10; maxCount++){
+			if(array[maxCount] > maxVal){
+				maxVal = array[maxCount];
 			}
 	
 	}
@@ -46,9 +46,9 @@ public class MaxMin {
 		
 		int minVal = 100;
 		
-		for (int i = 0; i < 10; i++){
-			if(array[i] < minVal){
-				minVal = array[i];
+		for (int minCount = 0; mincount < 10; minCount++){
+			if(array[minCount] < minVal){
+				minVal = array[minCount];
 			}
 	
 	}
